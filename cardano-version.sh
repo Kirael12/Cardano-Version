@@ -13,12 +13,12 @@ if [ $CURRENT_VERSION = $LAST_VERSION ] ; then
     read -r LAST_MAJ LAST_MID LAST_LOW <<< "$LAST_VERSION"
     LATEST=1
     printf 'Latest %s\ncardano_current_maj %s\ncardano_current_mid %s\ncardano_current_low %s\n' $LATEST $CURRENT_MAJ $CURRENT_MID $CURRENT_LOW > /var/lib/prometheus/node-exporter/currentnodeversion.prom
-    printf 'cardano_lattest_maj %s\ncardano_lattest_mid %s\ncardano_lattest_low %s\n' $LAST_MAJ $LAST_MID $LAST_LOW > /var/lib/prometheus/node-exporter/lattestnodeversion.prom
+    printf 'cardano_latest_maj %s\ncardano_latest_mid %s\ncardano_latest_low %s\n' $LAST_MAJ $LAST_MID $LAST_LOW > /var/lib/prometheus/node-exporter/latestnodeversion.prom
 else 
     IFS='.'
     read -r CURRENT_MAJ CURRENT_MID CURRENT_LOW <<< "$CURRENT_VERSION"
     read -r LAST_MAJ LAST_MID LAST_LOW <<< "$LAST_VERSION"
     LATEST=0
     printf 'Latest %s\ncardano_current_maj %s\ncardano_current_mid %s\ncardano_current_low %s\n' $LATEST $CURRENT_MAJ $CURRENT_MID $CURRENT_LOW > /var/lib/prometheus/node-exporter/currentnodeversion.prom
-    printf 'cardano_lattest_maj %s\ncardano_lattest_mid %s\ncardano_lattest_low %s\n' $LAST_MAJ $LAST_MID $LAST_LOW > /var/lib/prometheus/node-exporter/lattestnodeversion.prom
+    printf 'cardano_latest_maj %s\ncardano_latest_mid %s\ncardano_latest_low %s\n' $LAST_MAJ $LAST_MID $LAST_LOW > /var/lib/prometheus/node-exporter/latestnodeversion.prom
 fi
