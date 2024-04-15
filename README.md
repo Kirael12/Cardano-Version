@@ -70,7 +70,7 @@ You need to apply 5 transformations to the queries output. To do that, go to the
 
 * **First Transformation : make the metric "latest" a boolean :**
 
-<img width="1057" alt="Capture d’écran 2024-04-15 à 13 56 06" src="https://github.com/Kirael12/cardano-version/assets/113426048/f1b712fc-1a5b-41ce-bac0-2944f3465a75">
+<img width="1059" alt="Capture d’écran 2024-04-15 à 16 29 42" src="https://github.com/Kirael12/cardano-version/assets/113426048/e3874f00-da69-43a8-8d63-d1a50b6003b1">
 
 ---
 
